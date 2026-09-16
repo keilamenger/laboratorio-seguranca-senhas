@@ -1,103 +1,125 @@
-# laboratorio-seguranca-senhas
-Laboratório introdutório sobre segurança de senhas, força de credenciais e boas práticas de autenticação.
-
 # 🔐 Laboratório de Segurança de Senhas
+
+![Cybersecurity](https://img.shields.io/badge/Área-Cybersecurity-blue)
+![Nível](https://img.shields.io/badge/Nível-Iniciante-green)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
 
 ## 📌 Sobre o projeto
 
 Este projeto apresenta um laboratório introdutório sobre segurança de senhas e autenticação.
 
-O objetivo é compreender como características de uma senha podem influenciar sua segurança e conhecer boas práticas para criação e proteção de credenciais.
+O objetivo é compreender os principais fatores que influenciam a segurança de uma senha, identificar padrões previsíveis e conhecer boas práticas para proteção de credenciais.
 
-> ⚠️ Este projeto possui finalidade exclusivamente educacional. Nenhuma senha real ou credencial de terceiros deve ser utilizada nos testes.
+O projeto foi desenvolvido como parte da construção do meu portfólio na área de **Cibersegurança**.
 
 ---
 
 ## 🎯 Objetivos
 
-- Compreender o conceito de senha segura;
+- Compreender os fundamentos da segurança de senhas;
 - Identificar características de senhas fracas e fortes;
-- Entender a importância do comprimento da senha;
-- Conhecer os riscos relacionados ao uso de senhas previsíveis;
-- Aprender boas práticas de autenticação.
-
----
-
-## 🔎 O que torna uma senha mais segura?
-
-Alguns fatores importantes são:
-
-- Comprimento adequado;
-- Combinação de diferentes tipos de caracteres;
-- Ausência de informações pessoais;
-- Ausência de palavras ou padrões muito previsíveis;
-- Uso de senhas diferentes para serviços diferentes;
-- Utilização de autenticação multifator (MFA), quando disponível.
+- Analisar padrões previsíveis;
+- Compreender riscos relacionados ao uso de informações pessoais;
+- Conhecer ataques relacionados a credenciais;
+- Estudar boas práticas de autenticação;
+- Entender a importância do MFA.
 
 ---
 
 ## 🧪 Laboratório
 
-Neste laboratório serão analisados exemplos fictícios de senhas para identificar características que podem aumentar ou diminuir sua segurança.
+Foram utilizados exemplos fictícios de senhas para analisar características como:
 
-Nenhuma senha real será utilizada.
+- Comprimento;
+- Complexidade;
+- Previsibilidade;
+- Informações pessoais;
+- Padrões comuns.
 
-### Exemplos fictícios
+> ⚠️ Nenhuma senha real foi utilizada neste laboratório.
 
-| Senha | Observação |
+### Exemplos analisados
+
+| Exemplo | Principal problema |
 |---|---|
-| `123456` | Muito previsível |
-| `senha123` | Utiliza palavra comum |
-| `Keila1997` | Contém informação pessoal |
-| `Cachorro@123` | Possui caracteres variados, mas ainda apresenta padrão previsível |
-| `rio!Mesa7#Lua92` | Maior comprimento e combinação de caracteres |
+| `123456` | Sequência extremamente previsível |
+| `senha123` | Palavra comum + padrão previsível |
+| `Keila1997` | Informação pessoal |
+| `Cachorro@123` | Padrão previsível |
+| `rio!Mesa7#Lua92` | Maior comprimento e menor previsibilidade |
 
-Os exemplos acima são apenas ilustrativos e não devem ser utilizados como senhas reais.
+A análise detalhada está disponível em:
+
+➡️ [`analise-senhas.md`](analise-senhas.md)
 
 ---
 
 ## 🛡️ Boas práticas
 
-Para melhorar a segurança das contas:
+Durante o laboratório foram estudadas recomendações como:
 
-1. Utilizar senhas longas e únicas;
-2. Evitar informações pessoais;
-3. Não reutilizar a mesma senha em diferentes serviços;
-4. Utilizar um gerenciador de senhas;
-5. Ativar MFA sempre que possível;
-6. Não compartilhar senhas com outras pessoas;
-7. Trocar credenciais quando houver suspeita de comprometimento.
+- Utilizar senhas longas;
+- Criar senhas únicas para diferentes serviços;
+- Evitar informações pessoais;
+- Evitar padrões previsíveis;
+- Utilizar gerenciadores de senhas;
+- Ativar autenticação multifator (MFA);
+- Ter atenção a ataques de phishing;
+- Nunca publicar credenciais em repositórios.
+
+As recomendações completas estão disponíveis em:
+
+➡️ [`boas-praticas.md`](boas-praticas.md)
 
 ---
 
-## 📚 Conceitos estudados
+## 🧠 O que aprendi
+
+Este projeto ajudou a consolidar conhecimentos básicos importantes para a área de Cibersegurança.
+
+### Principais aprendizados
+
+**1. Segurança não depende apenas de complexidade**
+
+Uma senha com números e caracteres especiais ainda pode ser previsível quando utiliza padrões comuns.
+
+**2. Informações pessoais devem ser evitadas**
+
+Nomes, datas e outras informações relacionadas ao usuário podem tornar uma senha mais previsível.
+
+**3. Senhas devem ser únicas**
+
+A reutilização de credenciais aumenta o impacto de um possível vazamento.
+
+**4. MFA adiciona uma camada de proteção**
+
+A autenticação multifator pode adicionar uma barreira adicional mesmo quando uma senha é comprometida.
+
+**5. Segurança envolve comportamento**
+
+Além da tecnologia, hábitos do usuário são importantes para a proteção das credenciais.
+
+---
+
+## 🔎 Conceitos estudados
 
 - Autenticação
-- Senhas
 - Credenciais
-- Ataques de força bruta
-- Senhas previsíveis
+- Senhas
+- Força bruta
+- Ataque de dicionário
+- Credential stuffing
 - MFA
-- Gerenciadores de senhas
-- Segurança de contas
+- Phishing
+- Gerenciamento de senhas
 
 ---
 
-## 🚀 Próximos passos
+## 📂 Estrutura do projeto
 
-Como evolução deste laboratório, podem ser estudados:
-
-- Gerenciamento seguro de senhas;
-- Hash de senhas;
-- Salt;
-- Autenticação multifator;
-- Políticas de senha;
-- Ataques de força bruta em ambientes de laboratório autorizados.
-
----
-
-## ⚖️ Ética e segurança
-
-Todos os testes relacionados à segurança devem ser realizados somente em sistemas próprios ou com autorização explícita.
-
-Este projeto tem finalidade exclusivamente educacional.
+```text
+laboratorio-seguranca-senhas/
+│
+├── README.md
+├── analise-senhas.md
+└── boas-praticas.md
